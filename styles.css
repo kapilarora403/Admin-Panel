@@ -1,0 +1,161 @@
+
+.sideMenu {
+    border-right: 1px solid #f0f3f4;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 56px auto auto;
+    transform: translateX(-100%);
+    transition: all ease 0.25s;
+    z-index: 1000;
+    background-color: #f0f3f4;
+}
+
+.content {
+    width: 100%;
+    margin-left: 0;
+    transition: all ease 0.25s;
+    margin-top: 56px;
+}
+
+.nav-link, .btn-class {
+    display: block;
+    white-space: nowrap;
+    color: #e5212e;
+    font-weight: 500;
+    }
+
+.btn-class {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 0;
+    height: 48px;
+    
+}
+
+.btn-class .dropicon {
+    float: right;
+    margin-top: 8px;
+}
+
+.dropdown-container {
+  display: none;
+  background: none;
+  padding-left: 30px;
+  
+
+}
+
+.dropdown-container .nav-link .icon {
+    font-size: 22px;
+}
+
+.dropdown-container .nav-link .text{
+    font-size: 12px;
+}
+
+
+.nav-link:hover, .btn-class:hover, .nav-link:active, .dropdown-btn:active {
+    background-color: #e5212e;
+    color: white;
+    transform: scale(1.01,1.05);
+    transition: all ease 0.25s;
+    transform: translate(2%, 10%);
+    
+}
+
+.icon {
+    font-size: 30px;
+    margin-right: 4px;
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #36434a;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.active1 .sideMenu {
+    transform: translateX(0);
+    z-index: 1000;
+}
+
+.myButtons{
+    color: #e5212e;
+    border:1px solid #36434a;
+    background-color: #f0f3f4;
+}
+
+.myButtons:hover{
+    color: #e5212e;
+    background-color: #d3dcde;
+   
+}
+
+nav.navbar{
+    background-color: #e5212e;
+    box-shadow: 5px 1px 10px 2px #888888;
+}
+
+#navbarDropdownID{
+    border-bottom: 0px solid #36434a;
+    color: #f0f3f4;
+}
+
+#navbarDropdownID:hover{
+    background-color: transparent;
+    margin-right: 0px;
+    font-size: 16px;
+    transition: all ease 0.25s;
+}
+
+
+
+@media (min-width: 992px) {
+    .sideMenu {
+        transform: translateX(0);
+    }
+    
+    .content {
+        margin-left: 200px;
+    }
+    
+    .active1 .sideMenu{
+        width: 80px;
+    }
+    
+    .active1 .content {
+        margin-left: 80px;
+    }
+    
+    .active1 .text {
+        display: none;
+        
+    }
+    
+    .active1 .nav-link {
+        text-align: center;
+    }
+    
+    .active1 .btn-class {
+        text-align: center;
+        margin-left: 7px;
+        width: 80px;
+    }
+    
+    
+    .active1 .icon {
+        margin-right: 0;
+    }
+    
+}
